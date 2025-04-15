@@ -1,0 +1,215 @@
+/* Reset default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto Mono', monospace;
+}
+
+/* Background dan container utama */
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0; /* hilangkan padding supaya container bener2 pas 1 layar */
+    overflow: hidden; /* mencegah scroll */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222222;
+    color: #f0f0f0;
+    font-family:'Roboto Mono', monospace;
+}
+
+.container {
+    background-color: #1c1c1f;
+    border: 1px solid #2a2a2e;
+    border-radius: 20px;
+    max-width: 600px;
+    width: 100%;
+    height: 95vh; /* sedikit lebih kecil dari 100vh agar aman dari overflow */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px; /* padding di sini aja cukup */
+}
+
+/* Profil */
+.container-profil {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-profil img {
+    border-radius: 50%;
+    border: 4px solid #3d3d45;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.container-profil img:hover {
+    transform: scale(1.05);
+}
+
+.container-profil h1 {
+    margin-top: 15px;
+    font-size: 28px;
+    color: #e0e0e0;
+}
+
+.container-profil p {
+    font-size: 16px;
+    color: #aaaaaa;
+}
+
+.container-profil hr {
+    margin: 20px auto;
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background-color: #3a3a3a;
+}
+
+.container-profil-text {
+    text-align: left;
+    margin: 10px auto;
+    gap: 20px;
+}
+
+.container-profil-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.github-btn {
+    background-color: #00ffa3;
+    text-decoration: none;
+    height: 40px;
+    width: 50%;
+    margin-top: 15px;
+    border: 2px solid #888;
+}
+
+.social-btn {
+    background-color: #222222;
+    text-decoration: none;
+    height: 40px;
+    width: 50%;
+    margin-top: 15px;
+    border: 2px solid #888;
+}
+
+.github-btn a {
+    text-decoration: none; 
+    color: #222222; 
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.social-btn a {
+    text-decoration: none; 
+    color: #f0f0f0; 
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px; 
+    font-size: 16px;
+}
+
+.github-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #f0f0f0;
+}
+
+.social-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #00ffa3aa;
+}
+
+/* Tugas */
+.container-tugas {
+    padding: 10px;
+}
+
+.list-tugas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 280px; /* atau sesuai tinggi 5 item */
+    overflow-y: auto;
+    padding-right: 10px; /* buat ruang scroll bar */
+}
+
+.list-tugas::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .list-tugas::-webkit-scrollbar-thumb {
+    background: #00ffa3;
+    border-radius: 10px;
+  }
+  
+  .list-tugas::-webkit-scrollbar-track {
+    background: #2a2a2e;
+  }
+  
+
+.tugas-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2a2e;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.tugas-item:hover {
+    background-color: #38383f;
+    transform: translateX(5px);
+}
+
+.tugas-item a {
+    color: #00bfff;
+    text-decoration: none;
+    flex: 1;
+}
+
+.icon-code {
+    color: #00ffa3;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.list-tugas p {
+    margin-bottom: 12px;
+}
+
+.list-tugas a {
+    font-family: 'Azeret Mono', monospace;
+    text-decoration: none;
+    color: #f0f0f0;
+    background-color: #2a2a2e;
+    padding: 10px 20px;
+    border-radius: 12px;
+    display: inline-block;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s, color 0.2s;
+}
+
+.list-tugas a:hover {
+    background-color: #38383f;
+    transform: translateX(5px);
+    color: #00ffa3;
+}
