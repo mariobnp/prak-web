@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 2 | Latihan 8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        #search {
+            position: relative;
+            background: url("https://wallpapers.com/images/hd/travel-hd-axhrsecphqby11wk.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 40em;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .title, .form-container {
+            z-index: 2;
+            position: relative;
+        }
+
+        .title {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title h1 {
+            font-size: 40px;
+            font-family: 'Trebuchet MS', sans-serif;
+
+        }
+
+        .title p  a {
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .title hr {
+            width: 50%;
+            margin: 20px auto;
+            opacity: 0.5;
+        }
+
+        .form-container {
+            background-color: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: left;
+        }
+
+        select {
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #000;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        input[type="date"],
+        input[type="number"] {
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            background-color: rgba(255,255,255,0.9);
+            color: #000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .search-btn {
+            padding: 8px 25px;
+            background-color: #FF9800;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: flex-end;
+        }
+
+        .search-btn:hover {
+            background-color: #e68900;
+        }
+
+        /* Bagian Card */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* gap: 10px; */
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #e6e1e1;
+            width: 250px;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 20px;
+            gap: 10px;
+        }
+
+        .card>img {
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .rent-btn {
+            padding: 8px 25px;
+            background-color: #FF9800;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="search">
+        <div class="overlay"></div>
+        <div class="title">
+            <h1>UMBY Travel</h1>
+            <p><a href="#card-container">Find ur best car here !</a></p>
+            <hr>
+        </div>
+
+        <div class="form-container">
+            <!-- Form group asal -->
+            <div class="form-group">
+                <label for="origin">From</label>
+                <select name="origin" id="origin">
+                    <option value="JKT">Jakarta</option>
+                    <option value="BDG">Bandung</option>
+                    <option value="DPS">Bali</option>
+                </select>
+            </div>
+
+            <!-- Form group destinasi -->
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <select name="destination" id="destination">
+                    <option value="JKT">Jakarta</option>
+                    <option value="BDG">Bandung</option>
+                    <option value="DPS">Bali</option>
+                </select>
+            </div>
+
+            <!-- form group tgl -->
+             <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date">
+             </div>
+
+             <!-- form group passenger -->
+             <div class="form-group">
+                <label for="passenger">Passenger</label>
+                <input type="number">
+             </div>
+
+             <!-- button search -->
+              <button class="search-btn">Search</button>
+        </div>
+    </div>
+
+    <div class="card-container" id="card-container">
+        <div class="card">
+            <img src="https://s3.ap-southeast-1.amazonaws.com/img.jba.co.id//wysiwyg/ckeditor/20241201221025cover372D4LCX.webp" width="250" height="150" alt="">
+            <h2>Luxury Sedan</h2>
+            <p>Comfort and elegance for your journey</p>
+            <h2>Rp. 380.000/day</h2>
+            <button class="rent-btn">Rent Now</button>
+        </div>
+        
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWMMMewhCvEvmvdIAkMirwj63FJLDGOPgQFQ&s" width="250" height="150" alt="">
+            <h2>SUV</h2>
+            <p>Spacious and powerful for any terrain</p>
+            <h2>Rp. 280.000/day</h2>
+            <button class="rent-btn">Rent Now</button>
+        </div>
+        
+        <div class="card">
+            <img src="https://www.shutterstock.com/image-illustration/small-bright-red-vintage-compact-600nw-2449169475.jpg" width="250" height="150" alt="">
+            <h2>Compact Car</h2>
+            <p>Perfect for city travel and easy parking</p>
+            <h2>Rp. 500.000/day</h2>
+            <button class="rent-btn">Rent Now</button>
+        </div>
+        <div class="card">
+            <img src="https://www.shutterstock.com/image-illustration/small-bright-red-vintage-compact-600nw-2449169475.jpg" width="250" height="150" alt="">
+            <h2>Compact Car</h2>
+            <p>Perfect for city travel and easy parking</p>
+            <h2>Rp. 500.000/day</h2>
+            <button class="rent-btn">Rent Now</button>
+        </div>
+    </div>
+</body>
+</html>
