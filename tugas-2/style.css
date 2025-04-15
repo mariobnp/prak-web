@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #183d40;
+}
+
+#search {
+    position: relative;
+    background: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+}
+
+/* .title-link {
+    margin-bottom: 65px;
+} */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.title, .form-container {
+    z-index: 2;
+    position: relative;
+    text-shadow: 0 0 10px rgb(182, 168, 168), 0 0 20px white, 0 0 30px white;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.title-logo-text {
+    font-size: 50px;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-shadow: 0 0 10px rgb(182, 168, 168), 0 0 20px white, 0 0 30px white;
+}
+
+.title-second {
+    color: #FF9800;
+}
+
+.title-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search p a {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+.title hr {
+    width: 50%;
+    margin: 20px auto;
+    opacity: 0.5;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+select {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="date"],
+input[type="time"] {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: rgba(255,255,255,0.9);
+    color: #000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.search-btn {
+    padding: 8px 25px;
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.search-btn:hover {
+    background-color: #e68900;
+}
+
+/* Bagian Card */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 250px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    gap: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.card>img {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.card>p {
+    font-size: 12px;
+}
+
+.rent-btn {
+    padding: 8px 25px;
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

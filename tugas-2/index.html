@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tugas2.css">
+    <title>DriveNOW</title>
+</head>
+<body>
+    <div id="search">
+        <div class="overlay"></div>
+        <div class="title">
+            <div class="title-logo">
+                <img src="img/logo-rental.png" width="32px" height="32px" alt="">
+                <h1 class="title-logo-text">Drive<span class="title-second">NOW</span></h1>
+                <img src="img/logo-rental2.PNG" width="32" height="32" alt="">
+            </div>
+            <div class="title-link">
+                <p><a href="#card-container">Find your best car here!</a></p>
+                <hr>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <div class="form-group">
+                <label for="origin">Your Location</label>
+                <select name="origin" id="origin">
+                    <option value="JKT">Jakarta</option>
+                    <option value="BDG">Bandung</option>
+                    <option value="DPS">Bali</option>
+                </select>
+            </div>
+
+             <div class="form-group">
+                <label for="date">Rental Start Date</label>
+                <input type="date">
+             </div>
+
+             <div class="form-group">
+                <label for="date">Start Time</label>
+                <input type="time">
+             </div>
+
+             <div class="form-group">
+                <label for="date">Rental End Date</label>
+                <input type="date">
+             </div>
+
+             <div class="form-group">
+                <label for="date">End Time</label>
+                <input type="time">
+             </div>
+
+             <!-- button search -->
+              <button class="search-btn">Search</button>
+        </div>
+    </div>
+
+    <div class="card-container" id="card-container">
+        <div class="card">
+            <img src="img/lambo.jpeg" width="250" height="150" alt="">
+            <h2>Lamborghini</h2>
+            <p>Comfort and elegance for your journey</p>
+            <h3>$1.650/day</h3>
+            <button class="rent-btn">Rent Now</button>
+        </div>
+        
+        <div class="card">
+            <img src="img/ferari.avif" width="250" height="150" alt="">
+            <h2>Ferrari 488 / Roma</h2>
+            <p>Elegant and sporty for your date</p>
+            <h3>$1.230/day</h3>
+            <button class="rent-btn">Rent Now</button>
+        </div>
+        
+        <div class="card">
+            <img src="img/porsche.jpeg" width="250" height="150" alt="">
+            <h2>Porsche 911</h2>
+            <p>Perfect for city travel and easy parking</p>
+            <h3>$1.450/day</h3>
+            <button class="rent-btn">Rent Now</button>
+        </div>
+        <div class="card">
+            <img src="img/mclaren.jpeg" width="250" height="150" alt="">
+            <h2>McLaren 720S</h2>
+            <p>Perfect for city road</p>
+            <h3>$1.780/day</h3>
+            <button class="rent-btn">Rent Now</button>
+        </div>
+    </div>
+</body>
+</html>
