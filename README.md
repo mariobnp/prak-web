@@ -1,9 +1,9 @@
 # PRAKTIKUM PEMROGRAMAN WEB
 
-Selamat datang di repositori **Praktikum Pemrograman Web**!  
-Repositori ini berisi kumpulan latihan dan tugas saya selama mengikuti mata kuliah praktikum pemrograman web di kampus.
+Welkam to ma repo **Praktikum Pemrograman Web** BRADERRR !  
+Repo ini isinya tugas2 sama latihan matkul Pemrograman WEB, ya sederhana ae lah ya isinya
 
-Website latihan dan tugas dapat diakses melalui GitHub Pages:  
+Langsung ae akses disini ya abangkuuu:  
 🔗 [https://mariobnp.github.io/prak-web/](https://mariobnp.github.io/prak-web/)
 
 ## Daftar Latihan & Tugas
@@ -30,9 +30,9 @@ Website latihan dan tugas dapat diakses melalui GitHub Pages:
 - JS, TS, React, Next, Tailwind DLL (NANRI KALO UDAH JAGO)
 
 ## Author
-Mario B.  
-Mahasiswa Teknik Informatika
+Mario Bhona Parte
+Manusia biasa yang punya cita cita jadi pawang ular
 
 ---
 
-> Terima kasih telah mengunjungi repositori ini!
+> TENGKYU udah mampir ke repositori ini!
