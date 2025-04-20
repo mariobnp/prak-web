@@ -41,7 +41,6 @@ body {
 }
 
 .container-profil-info img {
-    /* position: absolute; */
     width: 475px;
     height: 425px;
     top: 2px;
@@ -52,6 +51,12 @@ body {
     border-radius: 60% 35% 20% 80% / 50% 60% 30% 60%;
     transition: all 0.5s ease;
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.container-profil-info img:hover {
+    transform: scale(1.05);;
 }
 
 .container-profil-info h1 {
