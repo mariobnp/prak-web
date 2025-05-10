@@ -11,9 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- google icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+
+    <!-- AOS -->
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <!-- swipper js -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -26,7 +30,7 @@
     <header>
         <div class="header-container">
             <div class="logo-container">
-                <p>Corelytics</p>
+                <img src="img/img-logo-corelytics.png" height="40px" width="110px" alt="">
             </div>
             <div class="nav-container">
                     <ul class="nav-list">
@@ -34,7 +38,7 @@
                             <a href="" class="nav-link">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">ABOUT</a>
+                            <a href="about.html" class="nav-link">ABOUT</a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">SERVICE</a>
@@ -57,15 +61,15 @@
     <!-- HERO SECTION WAK -->
      <section class="hero-section">
         <div class="hero-content">
-            <h1 class="hero-title">
+            <h1 class="hero-title" data-aos="flip-down" data-aos-delay="100" data-aos-duration="1000">
                 AI Powered <br>Next Gen <span>Analytics</span>
             </h1>
-            <p class="hero-description">
+            <p class="hero-description" data-aos="flip-down" data-aos-delay="500" data-aos-duration="1000">
                 Wawasan real-time dari AI, visualisasi data canggih, <br>dan kemampuan prediksi cerdas untuk kemajuan bisnis Anda.
             </p>
             <div class="hero-button">
-                <button class="btn btn-primary"><a href="#faqs-section">Jelajahi</a></button>
-                <button class="btn btn-secondary"><a href="">Mulai Sekarang</a></button>
+                <button class="btn btn-primary" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"><a href="#faqs-section">Jelajahi</a></button>
+                <button class="btn btn-secondary" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"><a href="">Mulai Sekarang</a></button>
             </div>
         </div>
      </section>
@@ -78,12 +82,14 @@
 
      <!-- Service Section -->
       <section class="service-section">
-        <h3 class="service-title">Layanan Kami</h3>
-        <p class="service-subtitle">Solusi berbasis data untuk UMKM</p>
+        <div class="service-header">
+            <h3 class="service-title" data-aos="flip-down" data-aos-delay="100" data-aos-duration="1000">Layanan Kami</h3>
+            <p class="service-subtitle" data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000">Solusi berbasis data untuk UMKM</p>
+        </div>
 
         <div class="service-grid-1">
             <!-- card 1 -->
-            <div class="service-card">
+            <div class="service-card" data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000">
                 <div class="service-card-icon">
                     <img src="img/img-icon-analisis-penjualan.png" alt="" width="60px" height="60px">
                 </div>
@@ -94,7 +100,7 @@
             </div>
 
             <!-- card 2 -->
-             <div class="service-card">
+             <div class="service-card" data-aos="slide-left" data-aos-delay="100" data-aos-duration="1000">
                 <div class="service-card-icon">
                     <img src="img/img-icon-visualisasi-data.png" alt="" width="60px" height="60px">
                 </div>
@@ -105,7 +111,7 @@
             </div>
 
             <!-- card 3 -->
-             <div class="service-card">
+             <div class="service-card" data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000">
                 <div class="service-card-icon">
                     <img src="img/img-icon-prediksi-permintaan.png" alt="" width="60px" height="60px">
                 </div>
@@ -116,7 +122,7 @@
             </div>
 
             <!-- card 4 -->
-             <div class="service-card">
+             <div class="service-card" data-aos="slide-left" data-aos-delay="100" data-aos-duration="1000">
                 <div class="service-card-icon">
                     <img src="img/img-icon-segmentasi-pelanggan.png" alt="" width="60px" height="60px">
                 </div>
@@ -130,7 +136,7 @@
 
       <!-- FAQs SECTION -->
      <section class="faqs-section" id="faqs-section">
-        <h3 class="faqs-title">FAQs</h3>
+        <h3 class="faqs-title" data-aos="flip-down" data-aos-delay="100" data-aos-duration="1000">FAQs</h3>
 
         <!-- pertanyaan 1 -->
         <div class="faqs">
@@ -173,69 +179,149 @@
      </section>
 
      <!-- Testimoni Section -->
-    <section class="testimoni-section swiper">
-        <div class="card-wrapper">
-            <ul class="card-list swiper-wrapper">
-                <!-- testimoni 1 -->
-                <li class="card-item swiper-slide">
-                    <a href="" class="card-link">
-                        <img src="img/person-1.jpg" alt="" class="card-image">
-                        <p class="badge">Developer</p>
-                        <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facere assumenda corporis aut vero doloremque!</h2>
-                        <button class="card-button material-symbols-outlined">arrow_forward</button>
-                    </a>
-                </li>
+    <section class="testimonial-section">
+        <div class="testimonial-container">
+            <div class="testimonial-section-header">
+                <h3 class="testimoni-title">Testimoni</h3>
+                <p class="testimoni-subtitle">Apa kata mereka ?</p>
+            </div>
+            <div class="testimonial-content">
+                <div class="testimonial-slider js-testimonial-slider swiper">
+                    <div class="swiper-wrapper">
+                        <!-- rating 1 -->
+                        <div class="testimonial-item swiper-slide">
+                            <div class="info">
+                                <img src="img/testmoni-1.jpg" alt="">
+                                <div class="text-box">
+                                    <p class="name">Andi</p>
+                                    <span class="job">Pemilik Barbershop 21</span>
+                                </div>
+                            </div>
+                            <p>Corelytics membantu menganalisis tren pelanggan dan meningkatkan pelayanan, menjadikan usaha barbershop saya lebih efisien dan menguntungkan.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
 
-                <!-- testimoni 2 -->
-                 <li class="card-item swiper-slide">
-                    <a href="" class="card-link">
-                        <img src="img/person-2.jpg" alt="" class="card-image">
-                        <p class="badge">Developer</p>
-                        <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facere assumenda corporis aut vero doloremque!</h2>
-                        <button class="card-button material-symbols-outlined">arrow_forward</button>
-                    </a>
-                </li>
+                        <!-- rating 2 -->
+                         <div class="testimonial-item swiper-slide">
+                            <div class="info">
+                                <img src="img/testimoni-2.jpg" alt="">
+                                <div class="text-box">
+                                    <p class="name">Budi</p>
+                                    <span class="job">Pemilik Kedai Kopi Kencana</span>
+                                </div>
+                            </div>
+                            <p>Corelytics memberikan wawasan data penjualan yang jelas, membantu kami menentukan stok dan meningkatkan strategi pemasaran kedai kopi.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
 
-                <!-- testimoni 3 -->
-                 <li class="card-item swiper-slide">
-                    <a href="" class="card-link">
-                        <img src="img/person-3.jpg" alt="" class="card-image">
-                        <p class="badge">Developer</p>
-                        <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facere assumenda corporis aut vero doloremque!</h2>
-                        <button class="card-button material-symbols-outlined">arrow_forward</button>
-                    </a>
-                </li>
+                        <!-- rating 3 -->
+                         <div class="testimonial-item swiper-slide">
+                            <div class="info">
+                                <img src="img/testimoni-3.jpg" alt="">
+                                <div class="text-box">
+                                    <p class="name">Joko</p>
+                                    <span class="job">Pemilik Toko Pakaian Jaya</span>
+                                </div>
+                            </div>
+                            <p>Prediksi permintaan dari Corelytics sangat sangat tepat, membantu toko pakaian kami mengatur stok dan mengurangi kerugian.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
 
-                <!-- testimoni 4 -->
-                 <li class="card-item swiper-slide">
-                    <a href="" class="card-link">
-                        <img src="img/person-4.jpg" alt="" class="card-image">
-                        <p class="badge">Developer</p>
-                        <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facere assumenda corporis aut vero doloremque!</h2>
-                        <button class="card-button material-symbols-outlined">arrow_forward</button>
-                    </a>
-                </li>
+                        <!-- rating 4 -->
+                         <div class="testimonial-item swiper-slide">
+                            <div class="info">
+                                <img src="img/testimoni-4.jpg" alt="">
+                                <div class="text-box">
+                                    <p class="name">Siti</p>
+                                    <span class="job">Pemilik Salon CantiQ</span>
+                                </div>
+                            </div>
+                            <p>Visualisasi data dari Corelytics mempermudah pemahaman tren pelanggan,membantu saya meningkatkan layanan dan kepuasan pelanggan salon.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
 
-                <!-- testimoni 5 -->
-                 <li class="card-item swiper-slide">
-                    <a href="" class="card-link">
-                        <img src="img/person-5.jpg" alt="" class="card-image">
-                        <p class="badge">Developer</p>
-                        <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facere assumenda corporis aut vero doloremque!</h2>
-                        <button class="card-button material-symbols-outlined">arrow_forward</button>
-                    </a>
-                </li>
-            </ul>
-
-            <div class="swiper-pagination"></div>
-            <div class="swiper-slide-button swiper-button-prev"></div>
-            <div class="swiper-slide-button swiper-button-next"></div>
+                        <!-- rating 5 -->
+                         <div class="testimonial-item swiper-slide">
+                            <div class="info">
+                                <img src="img/testimoni-5.jpg" alt="">
+                                <div class="text-box">
+                                    <p class="name">Maya</p>
+                                    <span class="job">Pemilik OlShop Indah</span>
+                                </div>
+                            </div>
+                            <p>Segmentasi pelanggan dari Corelytics memungkinkan saya merancang promosi yang lebih tepat sasaran, meningkatkan penjualan dan loyalitas pelanggan.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination js-testimonial-pagination"></div>
+            </div>
         </div>
     </section>
 
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo-section">
+                    <h1 class="footer-logo">
+                    <img src="img/img-logo-corelytics.png" alt="Corelytics Logo"></h1>
+                    <p class="footer-desc">Analisis Data untuk UMKM.</p>
+                    <div class="footer-contact">
+                    <p>📍 Jl. Cerdas No.88, Sleman, Yogyakarta, Indonesia</p>
+                    <p>📞 +62 857-4098-0695</p>
+                    <p>📧 hello@corelytics.id</p>
+                </div>
+            </div>
+        </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p>© 2025 Corelytics. All rights reserved.</p>
+                <p>Built by <strong>Mario Bhona Parte</strong></p>
+            </div>
+        </div>
+    </footer>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     <script src="./js/script.js"></script>
-    <script src="./js/swiper.js"></script> 
+    <script src="./js/swiper1.js"></script> 
+    <script src="./js/swiper2.js"></script>
+    <script src="./js/aos.js"></script>
 </body>
 </html>

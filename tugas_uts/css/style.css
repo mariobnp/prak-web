@@ -7,11 +7,12 @@
     --dark-gray: #888888;
 }
 
-* {
+*, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    /* scroll-behavior: smooth; */
 }
 
 body {
@@ -214,17 +215,24 @@ span {
     margin: auto;
 }
 
+.service-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
 .service-title {
-    color: var(--white);
+    color:var(--dark-gray);
     font-weight: 500;
-    font-size: 48px;
+    font-size: 20px;
 }
 
 .service-subtitle {
-    color: var(--dark-gray);
-    font-size: 20px;
-    font-weight: 200;
-    font-style: italic;
+    color: var(--white);
+    font-size: 48px;
+    font-weight: 500;
 }
 
 .service-grid-1 {
@@ -234,6 +242,7 @@ span {
     max-width: 1200px;
     /* height: 100px; */
     margin-top: 3rem;
+    overflow-x: hidden;
 }
 
 .service-card {
@@ -358,12 +367,32 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 7rem;
+}
+
+.testimoni-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.testimoni-title {
+    color: var(--dark-gray);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.testimoni-subtitle {
+    color: var(--white);
+    font-size: 48px;
+    font-weight: 500;
 }
 
 .card-wrapper {
     max-width: 1100px;
-    margin: 0 60px 35px;
+    margin: 30px 60px 35px;
     padding: 20px 10px;
     overflow: hidden;
 }
@@ -389,7 +418,7 @@ span {
 }
 
 .card-list .card-item .card-link:hover {
-    border-color: #786DFF;
+    border-color: var(--sky-blue);
 }
 
 .card-list .card-link .card-image {
@@ -422,7 +451,7 @@ span {
     border-radius: 50%;
     margin: 30px 0 5px;
     border: 2px solid var(--sky-blue);
-    color: var(--matte);
+    color: var(--white);
     background: none;
     cursor: pointer;
     transform: rotate(-45deg);
@@ -459,6 +488,133 @@ span {
         display: none;
     }
 }
+
+/* testimonial */
+.testimonial-section {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.testimonial-container {
+    padding: 100px 0;
+
+}
+
+.testimonial-section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.testimonial-item {
+    background-color: var(--dark-blue);
+    padding: 30px;
+    border-radius: 30px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Agar konten card tersebar rata */   
+}
+
+.testimonial-item img {
+    max-width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.testimonial-item .info {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-item .name {
+    font-size: 24px;
+    color: var(--white);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.testimonial-item .job {
+    color: var(--dark-gray);
+    font-weight: 300;
+}
+
+.testimonial-item p {
+    margin-top: 20px;
+    color: var(--dark-gray);
+}
+
+.testimonial-item .rating {
+    margin-top: 15px;
+    font-size: 14px;
+    color: hsl(36, 88%, 66%);
+}
+
+.js-testimonial-pagination {
+    display: none;
+}
+
+/* footer */
+.footer {
+  color: #ffffff;
+  padding: 40px 20px;
+  border: 1px solid transparent;
+  border-image-slice: 1;
+  margin-top: 0.1rem;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  gap: 8px;
+}
+
+.footer-logo img {
+  height: 40px;
+  width: 110px;
+}
+
+.footer-desc {
+  margin-top: 10px;
+  color: var(--white);
+}
+
+.footer-contact p {
+  margin: 6px 0;
+  color: var(--dark-gray);
+  font-size: 14px;
+}
+
+.footer-divider {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid rgba(120, 109, 255, 0.5);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 
 
 
