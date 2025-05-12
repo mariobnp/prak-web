@@ -1,5 +1,5 @@
 // swiper
-swiper1 = new Swiper('.card-wrapper', {
+swiper1 = new Swiper('.team-card-wrapper', {
   loop: true,
   spaceBetween: 30,
   speed: 600,
