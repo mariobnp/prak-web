@@ -25,11 +25,11 @@ body {
 /* HEADER */
 header {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
+    padding: 0 80px;
     z-index: 1000;
-    backdrop-filter: blur(20px);
+    
+    margin-top: 1rem;
 }
 
 .header-container {
@@ -40,8 +40,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(33, 30, 41, 0.5);
+    backdrop-filter: blur(20px);
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.05));
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     position: sticky;
+    border-radius: 16px;
 }
 
 /* logo */
@@ -481,6 +486,16 @@ span {
     border-radius: 16px;
 }
 
+.background-wrapper-2 {
+    background: url(../img/3d-robot-hand-background-ai-technology-side-view.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    border-radius: 16px;
+    padding: 2rem;
+}
+
 .panduan-content {
     display: flex;
     align-items: center;
@@ -651,8 +666,6 @@ span {
     left: 0;
     margin: 70px;
 }
-
-
 
 /* testimonial */
 .testimonial-section {
@@ -842,9 +855,7 @@ span {
 .asal-usul-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* 2 kolom */
     grid-template-rows: auto auto;
-    /* 2 baris */
     gap: 3rem;
     padding: 0 100px;
 }
@@ -1207,6 +1218,8 @@ label {
     color: var(--white);
 }
 
+.input,
+option,
 input,
 textarea {
     padding: 10px;
@@ -1223,11 +1236,17 @@ textarea {
     color: #ffffff;
 }
 
+.input,
 input,
 textarea::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
 
+option {
+    color: var(--dark-blue);
+}
+
+.input,
 input,
 textarea:focus {
     border-color: rgba(255, 255, 255, 0.6);
@@ -1335,7 +1354,7 @@ textarea {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2rem;
-    
+
 }
 
 .segmentasi-top {
