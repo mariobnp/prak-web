@@ -132,15 +132,13 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url("../img/3d-robot-hand-background-ai-technology-side-view.jpg");
-    background-repeat: no-repeat;
+    background: url("../img/3d-robot-hand-background-ai-technology-side-view.jpg") center no-repeat fixed;
     background-size: cover;
     overflow: hidden;
     min-height: 100vh;
     width: 100%;
     top: 0;
     left: 0;
-    background-position: center;
 }
 
 .glass-container {
@@ -235,7 +233,6 @@ span {
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 
 .btn-primary {
     background: rgba(255, 255, 255, 0.2);
